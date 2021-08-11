@@ -1,0 +1,85 @@
+.header {
+  margin: 0 auto;
+  max-width: 1700px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo {
+  height: 35px;
+  cursor: pointer;
+}
+
+.nav__list {
+  position: absolute;
+  left: 0;
+  bottom: -280%;
+  width: 100%;
+  background: rgb(155, 155, 155);
+  padding-top: 80px;
+  display: none;
+}
+
+.nav__item {
+  line-height: 21px;
+  color: #314584;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+}
+
+.nav__item:hover {
+  background: #777;
+  color: #fff;
+}
+
+.nav__toggler,.nav__toggler--checked {
+  background: url('../../images/open-menu.svg') no-repeat center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav__toggler--checked {
+  background: url('../../images/close-menu.svg') no-repeat center;
+  background-size: cover;
+}
+
+.header__select {
+  display: inline-block;
+}
+.header__contact {
+  width: 120px;
+  height: 60px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 5px 5px rgba(25,45,51,0.15));
+
+  line-height: 21px;
+  color: #ff3946;
+  cursor: pointer;
+}
+
+.header__contact:hover {
+  transform: scale(1.1);
+}
+
+.header__language {
+  line-height: 21px;
+  color: #314584;
+  cursor: pointer;
+}
+
+.header__language::after {
+  content: url('../../images/Arrow\ Down.svg');
+}

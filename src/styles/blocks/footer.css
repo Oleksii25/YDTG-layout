@@ -1,0 +1,90 @@
+.footer {
+  background: #314584;
+  margin-top: 30px;
+}
+.footer__content-wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  line-height: 21px;
+  color: #fff;
+}
+
+.footer__title {
+  font-size: 28px;
+  line-height: 30px;
+  color: #ff3946;
+  text-align: center;
+  margin: 30px 0;
+}
+.footer__nav {
+  display: none;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 35px;
+  color: #fff;
+}
+.footer__item { }
+.footer__copyright {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+  max-width: 250px;
+}
+
+.footer__link--fb {
+  background: url('../../images/Facebook.svg') no-repeat center;
+}
+
+.footer__link--tw {
+  background: url('../../images/Twitter.svg') no-repeat center;
+}
+
+.footer__link--dr {
+  background: url('../../images/Dribble.svg') no-repeat center;
+}
+
+.footer__link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  transition: transform 0.3s;
+}
+
+.footer__link:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .footer__content-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 60px 10px 50px;
+  }
+  .footer__nav {
+    display: block;
+  }
+
+  .footer__title {
+    font-size: 48px;
+    line-height: 60px;
+    margin: 20px 0 35px;
+  }
+}

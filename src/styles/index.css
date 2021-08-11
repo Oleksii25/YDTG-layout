@@ -1,2 +1,8 @@
 @import './globalStyles.css';
 @import './reset.css';
+@import './blocks/header.css';
+@import './blocks/spirit.css';
+@import './blocks/examples.css';
+@import './blocks/contact_us.css';
+@import './blocks/footer.css';
+@import './blocks/slider.css';

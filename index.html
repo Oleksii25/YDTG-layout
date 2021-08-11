@@ -8,29 +8,171 @@
   <link rel="stylesheet" href='./src/styles/index.css'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+<script>$(document).ready(function(){
+  $('.single-item').slick();
+});</script>
 </head>
 <body>
-  <div class="nav__logo"></div>
-  <nav class='nav'>
-    <!-- <ul class='nav__list'>
-      <li class="nav__item">Home.</li>
-      <li class="nav__item">About us.</li>
-      <li class="nav__item">Portfolio.</li>
-      <li class="nav__item">Blog.</li>
-      <li class="nav__item">Contact us.</li>
-    </ul> -->
-  </nav>
-  <select name="language" class='nav__select'>
-    <option value="EN">
-      EN
-    </option>
-    <option value="RU">
-      RU
-    </option>
-  </select>
-  <button type='button' class='nav__contact'>
-    Contact us
-  </button>
+  <header class="header">
+    <img
+    src="./src/images/Logo.png"
+    alt="logo"
+    class="header__logo"
+    >
+    <nav class='header__nav nav'>
+      <button type="button" class="nav__toggler">
+      </button>
+      <ul class='nav__list'>
+        <li class="nav__item"><a href="">Home.</a></li>
+        <li class="nav__item"><a href="">About us.</a></li>
+        <li class="nav__item"><a href="">Portfolio.</a></li>
+        <li class="nav__item"><a href="">Blog.</a></li>
+        <li class="nav__item"><a href="">Contact us.</a></li>
+      </ul>
+    </nav>
+    <div class="header__buttons-wrapper" >
+      <button
+        name="language"
+        class='header__language'
+        type="button"
+      >
+        EN
+      </button>
+      <button type='button' class='header__contact'>
+        Contact us
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__spirit spirit">
+      <article class="spirit__content-wrapper">
+        <h1 class='spirit__title'>
+          The Spirit of Digital Agency.
+        </h1>
+        <p class='spirit__text'>
+          Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.
+        </p>
+        <div class="spirit__links-wrapper">
+          <a href="" class="spirit__link-about">
+            More about us
+          </a>
+          <a href="" class="spirit__links-get">
+            Get in touch.
+          </a>
+        </div>
+      </article>
+      <div class="spirit__slider">
+        <div class="spirit__slider-item">
+          <img src="./src/images/Illustration.webp" alt="slide">
+        </div>
+        <div class="spirit__slider-item">
+          <img src="./src/images/Illustration.webp" alt="slide">
+        </div>
+        <div class="spirit__slider-item">
+          <img src="./src/images/Illustration.webp" alt="slide">
+        </div>
+      </div>
+    </section>
+    <section class='main__examples examples'>
+      <h2 class='examples__title'>
+        See some of our Creative work.
+      </h2>
+      <article class='examples__images-container'>
+        <div class="examples__image"></div>
+        <div class="examples__image"></div>
+        <div class="examples__image"></div>
+        <div class="examples__image"></div>
+        <div class="examples__image"></div>
+        <div class="examples__image"></div>
+      </article>
+      <a href="#" class="examples__link">
+        See More of These
+      </a>
+    </section>
+    <section class='main__contact-us contact-us'>
+      <a href="#" class='contact-us__link'>
+        CONTACT US
+      </a>
+      <h2 class='contact-us__title'>
+        Get in Touch
+      </h2>
+      <form
+        action="#"
+        method="POST"
+        class="contact-us__form"
+      >
+        <div class="contact-us__inputs-container">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="contact-us__input contact-us__input--email"
+            required
+          >
+          <input
+            type="text"
+            placeholder="Subject"
+            class="contact-us__input contact-us__input--name"
+            required
+          >
+        </div>
+        <textarea
+          name="message"
+          placeholder="Message here..."
+          class="contact-us__textarea"
+          required
+        ></textarea>
+        <button type="submit" class='contact-us__button'>
+          Send Message
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class='footer'>
+    <section class="footer__content-wrapper">
+      <a href="#" class='footer__logo'>
+        DOOB
+      </a>
+      <h2 class='footer__title'>
+        CREATIVITY ABOVE
+      </h2>
+      <nav class='footer__nav'>
+        <ul class='footer__list'>
+          <li class="footer__item"><a href="">Home.</a></li>
+          <li class="footer__item"><a href="">About us.</a></li>
+          <li class="footer__item"><a href="">Portfolio.</a></li>
+          <li class="footer__item"><a href="">Blog.</a></li>
+          <li class="footer__item"><a href="">Contact us.</a></li>
+        </ul>
+      </nav>
+      <span class="footer__copyright">
+        © 2019 - Doob,All Right Reserved
+      </span>
+      <div class="footer__links">
+        <a
+          href="https://www.facebook.com"
+          class="footer__link footer__link--fb"
+        >
+        </a>
+        <a
+          href="https://twitter.com"
+          class="footer__link footer__link--tw"
+        >
+        </a>
+        <a
+          href="https://dribbble.com"
+          class="footer__link footer__link--dr"
+        >
+        </a>
+      </div>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./src/js/slick.min.js"></script>
+  <script src="./src/js/menu.js"></script>
 </body>
 </html>
