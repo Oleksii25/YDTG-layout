@@ -2,6 +2,7 @@
   "name": "ydtg-lyaout",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/Oleksii25/YDTG-layout",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
