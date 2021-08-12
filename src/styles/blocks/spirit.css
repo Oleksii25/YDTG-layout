@@ -1,6 +1,7 @@
 .spirit {
   margin: 80px auto 0;
-  padding: 20px;
+  max-width: 1410px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,12 +57,14 @@
   border: 1px solid #ff3946;
 }
 
-.spirit__links-get {
+.spirit__link-get {
   margin-left: 10px;
+  line-height: 21px;
+  color: #314584;
   transition: transform 0.3s;
 }
 
-.spirit__links-get:hover {
+.spirit__link-get:hover {
   transform: scale(1.2);
 }
 
@@ -80,10 +83,13 @@
     justify-content: space-between;
   }
 
-  .spirit__content-wrapper {
-  }
-
   .spirit__slider{
     display: block;
+  }
+}
+
+@media (min-width: 1500px) {
+  .spirit {
+    margin: 80px 3% 0 19%;
   }
 }

@@ -13,12 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
-<script>$(document).ready(function(){
-  $('.single-item').slick();
-});</script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <img
     src="./src/images/Logo.png"
     alt="logo"
@@ -28,11 +25,31 @@
       <button type="button" class="nav__toggler">
       </button>
       <ul class='nav__list'>
-        <li class="nav__item"><a href="">Home.</a></li>
-        <li class="nav__item"><a href="">About us.</a></li>
-        <li class="nav__item"><a href="">Portfolio.</a></li>
-        <li class="nav__item"><a href="">Blog.</a></li>
-        <li class="nav__item"><a href="">Contact us.</a></li>
+        <li class="nav__item">
+          <a href="#home">
+            Home.
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about">
+            About us.
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio">
+            Portfolio.
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts">
+            Blog.
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts">
+            Contact us.
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="header__buttons-wrapper" >
@@ -43,13 +60,13 @@
       >
         EN
       </button>
-      <button type='button' class='header__contact'>
+      <a href="#contacts" class='header__contact'>
         Contact us
-      </button>
+      </a>
     </div>
   </header>
   <main class="main">
-    <section class="main__spirit spirit">
+    <section class="main__spirit spirit" id='about'>
       <article class="spirit__content-wrapper">
         <h1 class='spirit__title'>
           The Spirit of Digital Agency.
@@ -58,10 +75,10 @@
           Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.
         </p>
         <div class="spirit__links-wrapper">
-          <a href="" class="spirit__link-about">
+          <a href="#portfolio" class="spirit__link-about">
             More about us
           </a>
-          <a href="" class="spirit__links-get">
+          <a href="#contacts" class="spirit__link-get">
             Get in touch.
           </a>
         </div>
@@ -78,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section class='main__examples examples'>
+    <section class='main__examples examples' id='portfolio'>
       <h2 class='examples__title'>
         See some of our Creative work.
       </h2>
@@ -94,8 +111,8 @@
         See More of These
       </a>
     </section>
-    <section class='main__contact-us contact-us'>
-      <a href="#" class='contact-us__link'>
+    <section class='main__contact-us contact-us' id="contacts">
+      <a href="#contacts" class='contact-us__link'>
         CONTACT US
       </a>
       <h2 class='contact-us__title'>
@@ -142,11 +159,31 @@
       </h2>
       <nav class='footer__nav'>
         <ul class='footer__list'>
-          <li class="footer__item"><a href="">Home.</a></li>
-          <li class="footer__item"><a href="">About us.</a></li>
-          <li class="footer__item"><a href="">Portfolio.</a></li>
-          <li class="footer__item"><a href="">Blog.</a></li>
-          <li class="footer__item"><a href="">Contact us.</a></li>
+          <li class="footer__item">
+            <a href="#home">
+              Home.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#about">
+              About us.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#portfolio">
+              Portfolio.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#contacts">
+              Blog.
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#contacts">
+              Contact us.
+            </a>
+          </li>
         </ul>
       </nav>
       <span class="footer__copyright">
@@ -174,5 +211,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./src/js/slick.min.js"></script>
   <script src="./src/js/menu.js"></script>
+  <script src="./src/js/slider.js"></script>
+  <script src="./src/js/form.js"></script>
+  
 </body>
 </html>

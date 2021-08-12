@@ -33,15 +33,22 @@
   margin: 0 auto;
   line-height: 21px;
   color: #ff3946;
+  transition: transform 0.3s;
+}
+
+.examples__link:hover {
+  transform: scale(1.1)
 }
 
 @media (min-width: 768px) {
   .examples {
     margin-top: 190px;
   }
+  
   .examples__images-container {
     gap: 31px 28px;
   }
+
   .examples__title {
     font-size: 48px;
     line-height: 60px;
